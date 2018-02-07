@@ -3,7 +3,7 @@ class Ship():
         def  __init__(self,ai_settings,screen,):
                 self.screen = screen
                 self.ai_settings = ai_settings
-                self.images = pygame.image.load('images/Klingon Empire.ico')
+                self.images = pygame.image.load('images/BSG Patch.ico')
                 self.rect = self.images.get_rect()
                 self.screen_rect = screen.get_rect()
                 self.rect.centerx = self.screen_rect.centerx
@@ -19,3 +19,5 @@ class Ship():
                 self.rect.centerx = self.center
         def  blitme(self):
                 self.screen.blit(self.images,self.rect)
+        def center_ship(self):
+                self.center = self.screen_rect.centerx

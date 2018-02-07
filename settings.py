@@ -4,6 +4,7 @@ class Settings():
                 self.screen_height = 400
                 self.bg_color = (0,0,0)
                 self.ship_speed_factor =1
+                self.ship_limit = 3
                 self.bullet_speed_factor = 1
                 self.alien_speed_factor  = 1
                 self.fleet_drop_speed = 2
